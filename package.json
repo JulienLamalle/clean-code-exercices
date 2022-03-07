@@ -1,0 +1,32 @@
+{
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+    "babel-jest": "^26.0.1",
+    "eslint": "^6.8.0",
+    "jest": "^26.0.1"
+  },
+  "scripts": {
+    "eslint": "eslint lib test",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-transform-modules-commonjs"
+    ]
+  },
+  "dependencies": {
+    "lodash.flow": "^3.5.0",
+    "ramda": "^0.27.1"
+  },
+  "wallaby": {
+    "autoDetect": true,
+    "testFramework": {
+      "configFile": "./jest.config.walllaby.js"
+    }
+  }
+}
